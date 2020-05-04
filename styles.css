@@ -5,6 +5,7 @@ html {
 
 body {
     background-color: #393e46;
+    overflow-x: hidden;
 }
 
 main {
@@ -42,4 +43,56 @@ footer {
     color: #eeeeee;
     text-align: center;
     font-family: "Indie Flower", cursive;
+}
+
+.slide-in-animation {
+    position: relative;
+    animation-name: slide-in-left;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes slide-in-left {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 10px;
+    }
+}
+
+.slide-in-right {
+    position: relative;
+    animation-name: slide-in-right;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-right {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 10px;
+    }
+}
+
+.slide-in-top {
+    position: relative;
+    animation-name: slide-in-top;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-top {
+    from {
+        top: -500px;
+    }
+    to {
+        top: 10px;
+    }
 }

@@ -13,18 +13,21 @@ image2.setAttribute("src", randomImageSource2);
 /**If Player 1 Wins */
 if (randomNumber1 > randomNumber2) {
     let winnerNotice = document.querySelector("h1");
+    winnerNotice.classList.add("slide-in-animation");
     winnerNotice.innerHTML = "Player1 Wins!!";
     winnerNotice.style.color = "green";
 }
 /**If Player2 Wins */
 else if (randomNumber2 > randomNumber1) {
     let winnerNotice = document.querySelector("h1");
+    winnerNotice.classList.add("slide-in-right");
     winnerNotice.innerHTML = "Player2 Wins!!";
     winnerNotice.style.color = "green";
 }
 /**If its a draw */
 else {
     let winnerNotice = document.querySelector("h1");
+    winnerNotice.classList.add("slide-in-top");
     winnerNotice.innerHTML = "Heads Up, It's a draw!!"
     winnerNotice.style.color = "orange";
 }
