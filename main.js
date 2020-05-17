@@ -2,6 +2,7 @@ var playButton = document.querySelector("#play-button").addEventListener("click"
 
 
 function playGame() {
+
     /** FIRST DICE */
     var randomNumber1 = Math.floor(Math.random() * 6) + 1; // +1 is used to make the random numbers from 1 to 6
     randomImageSource1 = "images/dice" + randomNumber1 + ".png"; //targets the dice1-dice6 image
